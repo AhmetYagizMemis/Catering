@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri | AtlasHan Catering</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <nav class="navbar" style="position: relative; background: #1c1c1c;"> 
+        <div class="logo">
+            <a href="/">
+                <img src="/static/logo1.png" alt="logo" style="width:220px; background:transparent;">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/hakkimizda">Hakkımızda</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Hizmetlerimiz ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Kutu Yemekleri</a></li>
+                    <li><a href="#">Toplu Yemek Hizmeti</a></li>
+                    <li><a href="#">Yerinde Yemek Hizmeti</a></li>
+                    <li><a href="#">Organizasyon Yemek Hizmeti</a></li>
+                </ul>
+            </li>
+            <li><a href="/belgelerimiz">Belgelerimiz</a></li>
+            <li><a href="/galeri">Galeri</a></li>
+            <li><a href="/menu" class="ozel-menu-link">Menü</a></li>
+            <li><a href="/iletisim">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <section class="galeri-sayfasi">
+        <div class="galeri-baslik">
+            <h2>Galeri</h2>
+            <p>Lezzet dolu anlarımıza ve mutfağımızdan karelere göz atın.</p>
+        </div>
+
+        <div class="slider-cerceve">
+            <div class="slayt aktif"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80" alt="Yemek 1"></div>
+            <div class="slayt"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1200&q=80" alt="Yemek 2"></div>
+            <div class="slayt"><img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=1200&q=80" alt="Yemek 3"></div>
+            <div class="slayt"><img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=1200&q=80" alt="Yemek 4"></div>
+            <div class="slayt"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1200&q=80" alt="Yemek 5"></div>
+            <div class="slayt"><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1200&q=80" alt="Yemek 6"></div>
+            <div class="slayt"><img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=1200&q=80" alt="Yemek 7"></div>
+            <div class="slayt"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=1200&q=80" alt="Yemek 8"></div>
+            <div class="slayt"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=80" alt="Yemek 9"></div>
+            <div class="slayt"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=80" alt="Yemek 10"></div>
+        </div>
+
+        <div class="thumbnail-kapsayici">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=150&q=80" class="mini-resim aktif-mini" onclick="slaytaGit(0)">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=150&q=80" class="mini-resim" onclick="slaytaGit(1)">
+            <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=150&q=80" class="mini-resim" onclick="slaytaGit(2)">
+            <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=150&q=80" class="mini-resim" onclick="slaytaGit(3)">
+            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1200&q=80" class="mini-resim" onclick="slaytaGit(4)">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1200&q=80" class="mini-resim" onclick="slaytaGit(5)">
+            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=1200&q=80" class="mini-resim" onclick="slaytaGit(6)">
+            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=1200&q=80" class="mini-resim" onclick="slaytaGit(7)">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=80" class="mini-resim" onclick="slaytaGit(8)">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=80" class="mini-resim" onclick="slaytaGit(9)">
+        </div>
+    </section>
+
+    <script>
+        let mevcutSlaytIndex = 0;
+        const slaytlar = document.querySelectorAll('.slayt');
+        const miniResimler = document.querySelectorAll('.mini-resim');
+        let sliderZamanlayici;
+
+        function slaytGoster(index) {
+            // Sınırları kontrol et
+            if (index >= slaytlar.length) mevcutSlaytIndex = 0;
+            if (index < 0) mevcutSlaytIndex = slaytlar.length - 1;
+
+            // Önceki aktiflikleri kaldır
+            slaytlar.forEach(s => s.classList.remove('aktif'));
+            miniResimler.forEach(m => m.classList.remove('aktif-mini'));
+
+            // Yeni seçilen resmi aktif yap
+            slaytlar[mevcutSlaytIndex].classList.add('aktif');
+            miniResimler[mevcutSlaytIndex].classList.add('aktif-mini');
+        }
+
+        function sonrakiSlayt() {
+            mevcutSlaytIndex++;
+            slaytGoster(mevcutSlaytIndex);
+        }
+
+        // Kullanıcı alttaki küçük resme tıklarsa çalışacak fonksiyon
+        function slaytaGit(index) {
+            mevcutSlaytIndex = index;
+            slaytGoster(mevcutSlaytIndex);
+            zamanlayiciyiSifirla(); // Tıklanınca 4 saniyelik süreyi baştan başlatır
+        }
+
+        // 4 Saniyelik Otomatik Döngüyü Başlatma
+        function zamanlayiciyiBaslat() {
+            sliderZamanlayici = setInterval(sonrakiSlayt, 4000); // 4000 ms = 4 Saniye
+        }
+
+        function zamanlayiciyiSifirla() {
+            clearInterval(sliderZamanlayici);
+            zamanlayiciyiBaslat();
+        }
+
+        // Sayfa yüklendiğinde sistemi çalıştır
+        zamanlayiciyiBaslat();
+    </script>
+
+</body>
+</html>

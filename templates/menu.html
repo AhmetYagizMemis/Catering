@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Günün Menüsü | AtlasHan Catering</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <nav class="navbar" style="position: relative; background: #5c1a3a;"> 
+        <div class="logo">
+            <a href="/">
+                <img src="/static/logo1.png" alt="logo" style="width:220px; background:transparent;">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/hakkimizda">Hakkımızda</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Hizmetlerimiz ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Kutu Yemekleri</a></li>
+                    <li><a href="#">Toplu Yemek Hizmeti</a></li>
+                    <li><a href="#">Yerinde Yemek Hizmeti</a></li>
+                    <li><a href="#">Organizasyon Yemek Hizmeti</a></li>
+                </ul>
+            </li>
+            <li><a href="/belgelerimiz">Belgelerimiz</a></li>
+            <li><a href="/galeri">Galeri</a></li>
+            <li><a href="/menu" class="ozel-menu-link">Menü</a></li>
+            <li><a href="/iletisim">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <section class="menu-sayfasi">
+        <div class="menu-baslik">
+            <h2>Güncel Yemek Menümüz</h2>
+            <p>AtlasHan Catering'in usta şefleri tarafından hazırlanan hijyenik ve kalori dengeli menümüzü aşağıdan inceleyebilirsiniz.</p>
+        </div>
+
+        <div class="pdf-kapsayici">
+            <iframe src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" width="100%" height="100%" style="border: none;">
+                <p>Tarayıcınız PDF göstermeyi desteklemiyor. Menüyü aşağıdaki butondan indirebilirsiniz.</p>
+            </iframe>
+        </div>
+
+        <div class="menu-aksiyon">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" download class="btn-menu-indir">
+                <span>📄</span> Menüyü Bilgisayarına / Telefonuna İndir
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>

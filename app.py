@@ -7,6 +7,23 @@ app = Flask(__name__)
 def ana_sayfa():
     return render_template('index.html')
 
+# Hakkımızda sayfasını açan kısım
+@app.route('/hakkimizda')
+def hakkimizda():
+    return render_template('hakkimizda.html')
+
+# Belgelerimiz sayfasını açan kısım
+@app.route('/belgelerimiz')
+def belgelerimiz():
+    return render_template('belgelerimiz.html')
+
+@app.route('/galeri')
+def galeri():
+    return render_template('galeri.html')
+
+@app.route('/menu')
+def menu_sayfasi():
+    return render_template('menu.html')
 # İletişim formundan gelen bilgileri yakalayan kısım
 @app.route('/mesaj-gonder', methods=['POST'])
 def mesaj_gonder():
